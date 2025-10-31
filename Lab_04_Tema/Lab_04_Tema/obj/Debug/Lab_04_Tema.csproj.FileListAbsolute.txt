@@ -1,0 +1,11 @@
+Z:\Desktop\home\university\EGC\Lab_04\Lab_04_Tema\Lab_04_Tema\bin\Debug\Lab_04_Tema.exe.config
+Z:\Desktop\home\university\EGC\Lab_04\Lab_04_Tema\Lab_04_Tema\bin\Debug\Lab_04_Tema.exe
+Z:\Desktop\home\university\EGC\Lab_04\Lab_04_Tema\Lab_04_Tema\bin\Debug\Lab_04_Tema.pdb
+Z:\Desktop\home\university\EGC\Lab_04\Lab_04_Tema\Lab_04_Tema\bin\Debug\OpenTK.dll
+Z:\Desktop\home\university\EGC\Lab_04\Lab_04_Tema\Lab_04_Tema\bin\Debug\OpenTK.pdb
+Z:\Desktop\home\university\EGC\Lab_04\Lab_04_Tema\Lab_04_Tema\bin\Debug\OpenTK.xml
+Z:\Desktop\home\university\EGC\Lab_04\Lab_04_Tema\Lab_04_Tema\obj\Debug\Lab_04_Tema.csproj.AssemblyReference.cache
+Z:\Desktop\home\university\EGC\Lab_04\Lab_04_Tema\Lab_04_Tema\obj\Debug\Lab_04_Tema.csproj.CoreCompileInputs.cache
+Z:\Desktop\home\university\EGC\Lab_04\Lab_04_Tema\Lab_04_Tema\obj\Debug\Lab_04_T.F06E9DFB.Up2Date
+Z:\Desktop\home\university\EGC\Lab_04\Lab_04_Tema\Lab_04_Tema\obj\Debug\Lab_04_Tema.exe
+Z:\Desktop\home\university\EGC\Lab_04\Lab_04_Tema\Lab_04_Tema\obj\Debug\Lab_04_Tema.pdb

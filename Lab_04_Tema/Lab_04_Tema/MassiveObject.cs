@@ -24,6 +24,7 @@ namespace Lab_04_Tema
         private Color meshColor;
         private bool hasError;
 
+        // Constructor – incearca sa incarce obiectul 3D din fisier
         public MassiveObject(Color col)
         {
 
@@ -49,6 +50,7 @@ namespace Lab_04_Tema
             }
         }
 
+        // Comuta vizibilitatea obiectului
         public void ToggleVisibility()
         {
             if (hasError == false)
@@ -57,6 +59,7 @@ namespace Lab_04_Tema
             }
         }
 
+        // Deseneaza obiectul 3D daca nu exista erori si este vizibil
         public void Draw()
         {
             if (hasError == false && visibility == true)
@@ -71,6 +74,7 @@ namespace Lab_04_Tema
             }
         }
 
+        // Incarca coordonatele vertexurilor din fisierul .obj
         private List<Vector3> LoadFromObjFile(string fname)
         {
             List<Vector3> vlc3 = new List<Vector3>();

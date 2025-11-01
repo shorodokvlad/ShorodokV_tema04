@@ -18,6 +18,8 @@ namespace Lab_04_Tema
         private Randomizer rando;
 
         private const int GRAVITY_OFFSET = 1;
+
+        // Constructor – initializeaza obiectul cu valori aleatorii
         public Objectoid(bool gravity_status)
         {
             rando = new Randomizer();
@@ -44,6 +46,7 @@ namespace Lab_04_Tema
 
         }
 
+        // Deseneaza obiectul daca este vizibil
         public void Draw()
         {
             if (visibility)
@@ -59,6 +62,7 @@ namespace Lab_04_Tema
             }
         } 
 
+        // Actualizeaza pozitia obiectului in functie de gravitatie
         public void UpdatePosition(bool gravity_status)
         {
             if (visibility && gravity_status && !GroundCollisionDetected())
@@ -70,6 +74,7 @@ namespace Lab_04_Tema
             }
         }
 
+        // Verifica daca obiectul a atins solul
         public bool GroundCollisionDetected()
         {
             foreach (Vector3 vector in coordList)
@@ -83,6 +88,7 @@ namespace Lab_04_Tema
             return false;
         }
 
+        // Comuta vizibilitatea obiectului
         public void ToggleVisibility()
         {
             visibility = !visibility;

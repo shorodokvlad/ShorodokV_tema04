@@ -23,6 +23,7 @@ namespace Lab_04_Tema
             up_vector = new Vector3(0, 1, 0);
         }
 
+        // Constructor implicit – seteaza o pozitie si o tinta predefinita
         public Camera3DIsometric(int _eyeX, int _eyeY, int _eyeZ, int _targetX, int _targetY, int _targetZ, int _upX, int _upY, int _upZ)
         {
             eye = new Vector3(_eyeX, _eyeY, _eyeZ);
@@ -30,6 +31,7 @@ namespace Lab_04_Tema
             up_vector = new Vector3(_upX, _upY, _upZ);
         }
 
+        // Constructor cu parametri individuali
         public Camera3DIsometric(Vector3 _eye, Vector3 _target, Vector3 _up)
         {
             eye = _eye;
@@ -37,6 +39,7 @@ namespace Lab_04_Tema
             up_vector = _up;
         }
 
+        // Seteaza matricea de vizualizare a camerei
         public void SetCamera()
         {
             Matrix4 camera = Matrix4.LookAt(eye, target, up_vector);
@@ -44,12 +47,15 @@ namespace Lab_04_Tema
             GL.LoadMatrix(ref camera);
         }
 
+        // Muta camera spre stanga
         public void MoveRight()
         {
             eye = new Vector3(eye.X, eye.Y, eye.Z - MOVEMENT_UNIT);
             target = new Vector3(target.X, target.Y, target.Z - MOVEMENT_UNIT);
             SetCamera();
         }
+
+        // Muta camera spre stanga
         public void MoveLeft()
         {
             eye = new Vector3(eye.X, eye.Y, eye.Z + MOVEMENT_UNIT);
@@ -57,6 +63,7 @@ namespace Lab_04_Tema
             SetCamera();
         }
 
+        // Muta camera inainte
         public void MoveForward()
         {
             eye = new Vector3(eye.X - MOVEMENT_UNIT, eye.Y, eye.Z);
@@ -64,6 +71,7 @@ namespace Lab_04_Tema
             SetCamera();
         }
 
+        // Muta camera inapoi
         public void MoveBackward()
         {
             eye = new Vector3(eye.X + MOVEMENT_UNIT, eye.Y, eye.Z);
@@ -71,6 +79,7 @@ namespace Lab_04_Tema
             SetCamera();
         }
 
+        // Ridica camera in sus
         public void MoveUp()
         {
             eye = new Vector3(eye.X, eye.Y + MOVEMENT_UNIT, eye.Z);
@@ -78,6 +87,7 @@ namespace Lab_04_Tema
             SetCamera();
         }
 
+        // Coboara camera in jos
         public void MoveDown()
         {
             eye = new Vector3(eye.X, eye.Y - MOVEMENT_UNIT, eye.Z);

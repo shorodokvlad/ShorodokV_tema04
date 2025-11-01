@@ -20,27 +20,32 @@ namespace Lab_04_Tema
         private const int POINT_OFFSET = GRIDSTEP * UNITS;
         private const int MICRO_OFFSET = 1; // usefeul because otherwise the axes will be "drown" in overlapping grid lines...
 
+        // Constructor – initializeaza culoarea si vizibilitatea
         public Grid()
         {
             colorisation = GRIDCOLOR;
             visibility = true;
         }
 
+        // Afiseaza grila
         public void Show()
         {
             visibility = true;
         }
 
+         // Ascunde grila
         public void Hide()
         {
             visibility = false;
         }
 
+        // Comuta vizibilitatea grilei
         public void ToggleVisibility()
         {
             visibility = !visibility;
         }
 
+         // Deseneaza grila pe planul XZ
         public void Draw()
         {
             if (visibility)
